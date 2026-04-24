@@ -1,0 +1,100 @@
+male('Karamchand_Gandhi').
+male('Mahatma_Gandhi').
+male('Harilal_Gandhi').
+male('Manilal_Gandhi').
+male('Ramdas_Gandhi').
+male('Devdas_Gandhi').
+male('Rasiklal').
+male('Arun').
+male('Kanu').
+male('Ramchandra').
+male('Rajmohan').
+male('Gopal_krishna').
+male('Kantilal').
+
+female('Putlibai_Gandhi').
+female('Kasturba_Gandhi').
+female('Gulab_Gandhi').
+female('Sushila').
+female('Nirmala').
+female('Laxmi').
+female('Rami').
+female('Manuben').
+female('Sita').
+female('Ela').
+female('Sumitra').
+female('Usha').
+female('Tara').
+
+parent('Karamchand_Gandhi', 'Mahatma_Gandhi').
+parent('Putlibai_Gandhi', 'Mahatma_Gandhi').
+
+parent('Mahatma_Gandhi', 'Harilal_Gandhi').
+parent('Kasturba_Gandhi', 'Harilal_Gandhi').
+parent('Mahatma_Gandhi', 'Manilal_Gandhi').
+parent('Kasturba_Gandhi', 'Manilal_Gandhi').
+parent('Mahatma_Gandhi', 'Ramdas_Gandhi').
+parent('Kasturba_Gandhi', 'Ramdas_Gandhi').
+parent('Mahatma_Gandhi', 'Devdas_Gandhi').
+parent('Kasturba_Gandhi', 'Devdas_Gandhi').
+
+parent('Harilal_Gandhi', 'Rami').
+parent('Gulab_Gandhi', 'Rami').
+parent('Harilal_Gandhi', 'Manuben').
+parent('Gulab_Gandhi', 'Manuben').
+parent('Harilal_Gandhi', 'Rasiklal').
+parent('Gulab_Gandhi', 'Rasiklal').
+parent('Harilal_Gandhi', 'Kantilal').
+parent('Gulab_Gandhi', 'Kantilal').
+
+parent('Manilal_Gandhi', 'Arun').
+parent('Sushila', 'Arun').
+parent('Manilal_Gandhi', 'Sita').
+parent('Sushila', 'Sita').
+parent('Manilal_Gandhi', 'Ela').
+parent('Sushila', 'Ela').
+
+parent('Ramdas_Gandhi', 'Sumitra').
+parent('Nirmala', 'Sumitra').
+parent('Ramdas_Gandhi', 'Kanu').
+parent('Nirmala', 'Kanu').
+parent('Ramdas_Gandhi', 'Usha').
+parent('Nirmala', 'Usha').
+
+parent('Devdas_Gandhi', 'Tara').
+parent('Laxmi', 'Tara').
+parent('Devdas_Gandhi', 'Ramchandra').
+parent('Laxmi', 'Ramchandra').
+parent('Devdas_Gandhi', 'Rajmohan').
+parent('Laxmi', 'Rajmohan').
+parent('Devdas_Gandhi', 'Gopal_krishna').
+parent('Laxmi', 'Gopal_krishna').
+
+father(X, Y) :- parent(X, Y), male(X).
+mother(X, Y) :- parent(X, Y), female(X).
+child(Y, X) :- parent(X, Y).
+son(Y, X) :- child(Y, X), male(Y).
+daughter(Y, X) :- child(Y, X), female(Y).
+
+sibling(X, Y) :- father(Z, X), father(Z, Y), X \= Y.
+brother(X, Y) :- sibling(X, Y), male(X).
+sister(X, Y) :- sibling(X, Y), female(X).
+
+uncle(X, Y) :- parent(Z, Y), brother(X, Z).
+aunt(X, Y) :- parent(Z, Y), sister(X, Z).
+
+grandparent(X, Y) :- parent(X, Z), parent(Z, Y).
+grandfather(X, Y) :- grandparent(X, Y), male(X).
+grandmother(X, Y) :- grandparent(X, Y), female(X).
+
+grandchild(X, Y) :- grandparent(Y, X).
+grandson(X, Y) :- grandchild(X, Y), male(X).
+granddaughter(X, Y) :- grandchild(X, Y), female(X).
+
+cousin(X, Y) :- parent(P1, X), parent(P2, Y), sibling(P1, P2).
+
+nephew(X, Y) :- sibling(Y, Z), parent(Z, X), male(X).
+niece(X, Y) :- sibling(Y, Z), parent(Z, X), female(X).
+
+ancestor(X, Y) :- grandparent(X, Y).
+ancestor(X, Y) :- parent(X, Z), ancestor(Z, Y).

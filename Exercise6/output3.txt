@@ -1,0 +1,57 @@
+102 ?- father(X,'Mahatma_Gandhi').
+X = 'Karamchand_Gandhi' .
+
+103 ?- mother(X,'Manilal_Gandhi').
+X = 'Kasturba_Gandhi'.
+
+104 ?- son(X,'Ramdas_Gandhi').
+X = 'Kanu' .
+
+105 ?- daughter(X,'Ramdas_Gandhi').
+X = 'Sumitra' ;
+X = 'Usha'.
+
+106 ?- brother(X,'Harilal_Gandhi').
+X = 'Manilal_Gandhi' ;
+X = 'Ramdas_Gandhi' ;
+X = 'Devdas_Gandhi' .
+
+107 ?- sister('Ela','Arun').
+true .
+
+108 ?- sibling(X,'Rami').
+X = 'Manuben' ;
+X = 'Rasiklal' ;
+X = 'Kantilal' .
+
+109 ?- grandfather(X,'Devdas_Gandhi').
+X = 'Karamchand_Gandhi' .
+
+110 ?- grandmother(X,'Tara').
+X = 'Kasturba_Gandhi' .
+
+112 ?- grandson(X,'Putlibai_Gandhi').
+X = 'Harilal_Gandhi' ;
+X = 'Manilal_Gandhi' ;
+X = 'Ramdas_Gandhi' ;
+X = 'Devdas_Gandhi'.
+
+113 ?- granddaughter('Sumitra','Mahatma_Gandhi').
+true .
+
+114 ?- cousin('Rami', 'Tara').
+true .
+
+116 ?- father(X,'Usha').
+X = 'Ramdas_Gandhi' .
+
+118 ?- sibling(X,'Usha').
+X = 'Sumitra' ;
+X = 'Kanu' .
+
+119 ?- ancestor(X, 'Tara').
+X = 'Mahatma_Gandhi' ;
+X = 'Kasturba_Gandhi' ;
+X = 'Karamchand_Gandhi' ;
+X = 'Putlibai_Gandhi' .
+

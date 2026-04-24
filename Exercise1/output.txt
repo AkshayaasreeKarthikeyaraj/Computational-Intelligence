@@ -1,0 +1,307 @@
+
+Enter number of nodes : 14
+Enter node1 : 1
+Node added!
+
+Enter node2 : 2
+Node added!
+
+Enter node3 : 3
+Node added!
+
+Enter node4 : 4
+Node added!
+
+Enter node5 : 5
+Node added!
+
+Enter node6 : 6
+Node added!
+
+Enter node7 : 7
+Node added!
+
+Enter node8 : 8
+Node added!
+
+Enter node9 : 9
+Node added!
+
+Enter node10 : 10
+Node added!
+
+Enter node11 : 11
+Node added!
+
+Enter node12 : 12
+Node added!
+
+Enter node13 : 13
+Node added!
+
+Enter node14 : 14
+Node added!
+
+Enter number of edges : 16
+Enter node1 : 1
+Enter node2 : 2
+Enter cost : 2
+Edge added!
+
+Enter node1 : 1
+Enter node2 : 3
+Enter cost : 6
+Edge added!
+
+Enter node1 : 2
+Enter node2 : 4
+Enter cost : 4
+Edge added!
+
+Enter node1 : 2
+Enter node2 : 5
+Enter cost : 3
+Edge added!
+
+Enter node1 : 3
+Enter node2 : 6
+Enter cost : 4
+Edge added!
+
+Enter node1 : 4
+Enter node2 : 8
+Enter cost : 5
+Edge added!
+
+Enter node1 : 5
+Enter node2 : 8
+Enter cost : 8
+Edge added!
+
+Enter node1 : 6
+Enter node2 : 7
+Enter cost : 3
+Edge added!
+
+Enter node1 : 6
+Enter node2 : 9
+Enter cost : 2
+Edge added!
+
+Enter node1 : 7
+Enter node2 : 14
+Enter cost : 9
+Edge added!
+
+Enter node1 : 7
+Enter node2 : 9
+Enter cost : 8
+Edge added!
+
+Enter node1 : 8
+Enter node2 : 10
+Enter cost : 3
+Edge added!
+
+Enter node1 : 10
+Enter node2 : 11
+Enter cost : 1
+Edge added!
+
+Enter node1 : 10
+Enter node2 : 12
+Enter cost : 4
+Edge added!
+
+Enter node1 : 11
+Enter node2 : 13
+Enter cost : 10
+Edge added!
+
+Enter node1 : 12
+Enter node2 : 13
+Enter cost : 2
+Edge added!
+
+1. Add Node
+2. Delete Node
+3. Add Edge
+4. Delete Edge
+5. Display
+6. BFS
+7. DFS
+8. UCS
+9. Exit
+
+Enter choice : 6
+
+Enter start node : 4
+Enter goal node : 14
+
+Fringe :  ['4']
+Visited :  []
+
+Fringe :  ['2', '8']
+Visited :  ['4']
+
+Fringe :  ['8', '1', '5']
+Visited :  ['4', '2']
+
+Fringe :  ['1', '5', '10']
+Visited :  ['4', '2', '8']
+
+Fringe :  ['5', '10', '3']
+Visited :  ['4', '2', '8', '1']
+
+Fringe :  ['10', '3']
+Visited :  ['4', '2', '8', '1', '5']
+
+Fringe :  ['3', '11', '12']
+Visited :  ['4', '2', '8', '1', '5', '10']
+
+Fringe :  ['11', '12', '6']
+Visited :  ['4', '2', '8', '1', '5', '10', '3']
+
+Fringe :  ['12', '6', '13']
+Visited :  ['4', '2', '8', '1', '5', '10', '3', '11']
+
+Fringe :  ['6', '13']
+Visited :  ['4', '2', '8', '1', '5', '10', '3', '11', '12']
+
+Fringe :  ['13', '7', '9']
+Visited :  ['4', '2', '8', '1', '5', '10', '3', '11', '12', '6']
+
+Fringe :  ['7', '9']
+Visited :  ['4', '2', '8', '1', '5', '10', '3', '11', '12', '6', '13']
+
+Fringe :  ['9', '14']
+Visited :  ['4', '2', '8', '1', '5', '10', '3', '11', '12', '6', '13', '7']
+
+Fringe :  ['14']
+Visited :  ['4', '2', '8', '1', '5', '10', '3', '11', '12', '6', '13', '7', '9']
+
+Goal found!
+
+BFS path :  ['4', '2', '8', '1', '5', '10', '3', '11', '12', '6', '13', '7', '9', '14']
+
+Enter choice : 7
+
+Enter start node : 4
+Enter goal node : 14
+
+Stack : ['4']
+Visited : []
+
+Stack : ['2', '8']
+Visited : ['4']
+
+Stack : ['2', '5', '10']
+Visited : ['4', '8']
+
+Stack : ['2', '5', '11', '12']
+Visited : ['4', '8', '10']
+
+Stack : ['2', '5', '11', '13']
+Visited : ['4', '8', '10', '12']
+
+Stack : ['2', '5', '11', '11']
+Visited : ['4', '8', '10', '12', '13']
+
+Stack : ['2', '5', '11']
+Visited : ['4', '8', '10', '12', '13', '11']
+
+Stack : ['2', '5']
+Visited : ['4', '8', '10', '12', '13', '11']
+
+Stack : ['2', '2']
+Visited : ['4', '8', '10', '12', '13', '11', '5']
+
+Stack : ['2', '1']
+Visited : ['4', '8', '10', '12', '13', '11', '5', '2']
+
+Stack : ['2', '3']
+Visited : ['4', '8', '10', '12', '13', '11', '5', '2', '1']
+
+Stack : ['2', '6']
+Visited : ['4', '8', '10', '12', '13', '11', '5', '2', '1', '3']
+
+Stack : ['2', '7', '9']
+Visited : ['4', '8', '10', '12', '13', '11', '5', '2', '1', '3', '6']
+
+Stack : ['2', '7', '7']
+Visited : ['4', '8', '10', '12', '13', '11', '5', '2', '1', '3', '6', '9']
+
+Stack : ['2', '7', '14']
+Visited : ['4', '8', '10', '12', '13', '11', '5', '2', '1', '3', '6', '9', '7']
+
+Goal found!
+
+DFS path :  ['4', '8', '10', '12', '13', '11', '5', '2', '1', '3', '6', '9', '7', '14']
+
+Enter choice : 8
+
+Enter start node : 4
+Enter goal node : 13
+
+
+Frontier : ['4']
+Explored : set()
+
+Expanding : 4 with cost : 0
+
+Frontier : ['2', '8']
+Explored : {'4'}
+
+Expanding : 2 with cost : 4
+
+Frontier : ['8', '1', '5']
+Explored : {'2', '4'}
+
+Expanding : 8 with cost : 5
+
+Frontier : ['1', '5', '5', '10']
+Explored : {'2', '4', '8'}
+
+Expanding : 1 with cost : 6
+
+Frontier : ['5', '5', '10', '3']
+Explored : {'2', '1', '4', '8'}
+
+Expanding : 5 with cost : 7
+
+Frontier : ['5', '10', '3']
+Explored : {'2', '5', '4', '8', '1'}
+
+Expanding : 10 with cost : 8
+
+Frontier : ['5', '3', '11', '12']
+Explored : {'2', '5', '4', '10', '8', '1'}
+
+Expanding : 11 with cost : 9
+
+Frontier : ['5', '3', '12', '13']
+Explored : {'2', '11', '5', '4', '10', '8', '1'}
+
+Expanding : 3 with cost : 12
+
+Frontier : ['5', '12', '13', '6']
+Explored : {'2', '3', '11', '5', '4', '10', '8', '1'}
+
+Expanding : 12 with cost : 12
+
+Frontier : ['5', '13', '6', '13']
+Explored : {'2', '12', '3', '11', '5', '4', '10', '8', '1'}
+
+Expanding : 5 with cost : 13
+
+Frontier : ['13', '6', '13']
+Explored : {'2', '12', '3', '11', '5', '4', '10', '8', '1'}
+
+Expanding : 13 with cost : 14
+Goal found!
+
+UCS path :  ['4', '8', '10', '12', '13']
+Cost :  14
+
+Enter choice : 9
+Exiting..

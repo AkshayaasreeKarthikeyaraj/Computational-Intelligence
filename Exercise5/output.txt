@@ -1,0 +1,149 @@
+
+===== WUMPUS WORLD MENU =====
+1. Random World
+2. Manual Input World
+3. Exit
+Enter your choice: 2
+
+Enter grid size: 4
+
+Enter number of pits: 2
+Enter 2 Pit positions:
+Pit X: 1
+Pit Y: 0
+Pit X: 3
+Pit Y: 3
+
+Enter Wumpus X position: 1
+Enter Wumpus Y position: 3
+
+Enter Gold X position: 0
+Enter Gold Y position: 2
+
+===== INITIAL FULL WORLD =====
+B       .       G       S
+P       B       S       W
+B       .       .       SB
+A       .       B       P
+
+===== AGENT VIEW =====
+.       .       .       .
+.       .       .       .
+.       .       .       .
+A       .       .       .
+
+Current Position: (3, 0)
+Possible Path: [(2, 0), (3, 1)]
+Percept: ['None', 'None', 'None', 'None', 'None']
+Enter action (up/down/left/right/grab): up
+
+===== AGENT VIEW =====
+.       .       .       .
+.       .       .       .
+A       .       .       .
+V       .       .       .
+
+Current Position: (2, 0)
+Possible Path: [(1, 0), (3, 0), (2, 1)]
+Percept: ['None', 'Breeze', 'None', 'None', 'None']
+Enter action (up/down/left/right/grab): right
+
+===== AGENT VIEW =====
+.       .       .       .
+.       .       .       .
+V       A       .       .
+V       .       .       .
+
+Current Position: (2, 1)
+Possible Path: [(1, 1), (3, 1), (2, 0), (2, 2)]
+Percept: ['None', 'None', 'None', 'None', 'None']
+Enter action (up/down/left/right/grab): right
+
+===== AGENT VIEW =====
+.       .       .       .
+.       .       .       .
+V       V       A       .
+V       .       .       .
+
+Current Position: (2, 2)
+Possible Path: [(1, 2), (3, 2), (2, 1), (2, 3)]
+Percept: ['None', 'None', 'None', 'None', 'None']
+Enter action (up/down/left/right/grab): right
+
+===== AGENT VIEW =====
+.       .       .       .
+.       .       .       .
+V       V       V       A
+V       .       .       .
+
+Current Position: (2, 3)
+Possible Path: [(1, 3), (3, 3), (2, 2)]
+Percept: ['Stench', 'Breeze', 'None', 'None', 'None']
+Enter action (up/down/left/right/grab): left
+
+===== AGENT VIEW =====
+.       .       .       .
+.       .       .       .
+V       V       A       V
+V       .       .       .
+
+Current Position: (2, 2)
+Possible Path: [(1, 2), (3, 2), (2, 1), (2, 3)]
+Percept: ['None', 'None', 'None', 'None', 'None']
+Enter action (up/down/left/right/grab): up
+
+===== AGENT VIEW =====
+.       .       .       .
+.       .       A       .
+V       V       V       V
+V       .       .       .
+
+Current Position: (1, 2)
+Possible Path: [(0, 2), (2, 2), (1, 1), (1, 3)]
+Percept: ['Stench', 'None', 'None', 'None', 'None']
+Enter action (up/down/left/right/grab): left
+
+===== AGENT VIEW =====
+.       .       .       .
+.       A       V       .
+V       V       V       V
+V       .       .       .
+
+Current Position: (1, 1)
+Possible Path: [(0, 1), (2, 1), (1, 0), (1, 2)]
+Percept: ['None', 'Breeze', 'None', 'None', 'None']
+Enter action (up/down/left/right/grab): up
+
+===== AGENT VIEW =====
+.       A       .       .
+.       V       V       .
+V       V       V       V
+V       .       .       .
+
+Current Position: (0, 1)
+Possible Path: [(1, 1), (0, 0), (0, 2)]
+Percept: ['None', 'None', 'None', 'None', 'None']
+Enter action (up/down/left/right/grab): right
+
+===== AGENT VIEW =====
+.       V       A       .
+.       V       V       .
+V       V       V       V
+V       .       .       .
+
+Current Position: (0, 2)
+Possible Path: [(1, 2), (0, 1), (0, 3)]
+Percept: ['None', 'None', 'Glitter', 'None', 'None']
+Enter action (up/down/left/right/grab): grab
+Gold Grabbed Successfully!
+
+===== GAME OVER =====
+Total Actions: 10
+Final Path: [(3, 0), (2, 0), (2, 1), (2, 2), (2, 3), (2, 2), (1, 2), (1, 1), (0, 1), (0, 2)]
+
+===== WUMPUS WORLD MENU =====
+1. Random World
+2. Manual Input World
+3. Exit
+Enter your choice: 3
+Exiting...

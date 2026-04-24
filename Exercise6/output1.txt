@@ -1,0 +1,106 @@
+
+   Arithematic Operations & Set Operations
+
+--- Main Menu ---
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Set Union
+5. Set Intersection
+6. Set Difference
+7. Exit
+Enter choice (1-7): 1.
+
+--- Addition ---
+Enter X: |: 5.
+Enter Y: |: 7.
+Result: 12
+
+--- Main Menu ---
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Set Union
+5. Set Intersection
+6. Set Difference
+7. Exit
+Enter choice (1-7): |: 2.
+
+--- Subtraction ---
+Enter X: |: 9.
+Enter Y: |: 4.
+Result: 5
+
+--- Main Menu ---
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Set Union
+5. Set Intersection
+6. Set Difference
+7. Exit
+Enter choice (1-7): |: 3.
+
+--- Multiplication ---
+Enter X: |: 5.
+Enter Y: |: 9.
+Result: 45
+
+--- Main Menu ---
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Set Union
+5. Set Intersection
+6. Set Difference
+7. Exit
+Enter choice (1-7): |: 4.
+
+--- Set Union ---
+Enter Lis]1 (e.g. [1,2,3]): |: [1,6,9
+|: .
+Enter Lis]. (e.g. [2,3,4]): |: [0,2,5
+Union: [1,6,9,0,2,5]
+
+--- Main Menu ---
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Set Union
+5. Set Intersection
+6. Set Difference
+7. Exit
+Enter choice (1-7): |: 5.
+
+--- Set Intersection ---
+Enter Lis]. (e.g. [1,2,3]): |: [1,7,3
+Enter Lis]. (e.g. [2,3,4]): |: [2,6,3
+Intersection: [3]
+
+--- Main Menu ---
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Set Union
+5. Set Intersection
+6. Set Difference
+7. Exit
+Enter choice (1-7): |: 6.
+
+--- Set Difference ---
+Enter List1 (].g. [1,2,3]): |: [1,2,3,4,5
+Enter L].t2 (e.g. [2,3,4]): |: [3,4
+Difference: [1,2,5]
+
+--- Main Menu ---
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Set Union
+5. Set Intersection
+6. Set Difference
+7. Exit
+Enter choice (1-7): |: 7.
+
+Exiting!
+true.

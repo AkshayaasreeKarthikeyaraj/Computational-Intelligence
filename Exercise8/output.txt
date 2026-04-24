@@ -1,0 +1,69 @@
+Enter number of trees (n_estimators): 100
+Select criterion:
+1. gini
+2. entropy
+Enter choice (1 or 2): 1
+
+Split: 70-30
+Train samples: 398
+Test samples : 171
+
+Confusion Matrix:
+          Predicted 0   Predicted 1
+Actual 0     TN= 59    FP= 4
+Actual 1     FN= 1    TP= 107
+
+Accuracy : 0.9708
+Precision: 0.964
+Recall   : 0.9907
+F1 Score : 0.9772
+
+Split: 60-40
+Train samples: 341
+Test samples : 228
+
+Confusion Matrix:
+          Predicted 0   Predicted 1
+Actual 0     TN= 76    FP= 4
+Actual 1     FN= 1    TP= 147
+
+Accuracy : 0.9781
+Precision: 0.9735
+Recall   : 0.9932
+F1 Score : 0.9833
+
+Split: 75-25
+Train samples: 426
+Test samples : 143
+
+Confusion Matrix:
+          Predicted 0   Predicted 1
+Actual 0     TN= 51    FP= 3
+Actual 1     FN= 2    TP= 87
+
+Accuracy : 0.965
+Precision: 0.9667
+Recall   : 0.9775
+F1 Score : 0.9721
+
+Split: 80-20
+Train samples: 455
+Test samples : 114
+
+Confusion Matrix:
+          Predicted 0   Predicted 1
+Actual 0     TN= 40    FP= 3
+Actual 1     FN= 1    TP= 70
+
+Accuracy : 0.9649
+Precision: 0.9589
+Recall   : 0.9859
+F1 Score : 0.9722
+
+
+Final Consolidated Results:
+Split   TP   TN   FP   FN   Accuracy  Precision  Recall   F1-Score
+70-30  107   59    4    1     0.9708      0.964     0.9907     0.9772
+60-40  147   76    4    1     0.9781     0.9735     0.9932     0.9833
+75-25   87   51    3    2      0.965     0.9667     0.9775     0.9721
+80-20   70   40    3    1     0.9649     0.9589     0.9859     0.9722

@@ -1,0 +1,16 @@
+Attendance,StudyHours,PrevResults,Internet,ParentalSupport,HealthStatus,Result
+High,Long,Good,Yes,Strong,Good,Pass
+High,Short,Good,Yes,Weak,Good,Pass
+Medium,Long,Average,Yes,Strong,Good,Pass
+Low,Long,Average,No,Weak,Poor,Fail
+Medium,Short,Good,Yes,Strong,Good,Pass
+Low,Short,Poor,No,Weak,Poor,Fail
+High,Long,Average,Yes,Strong,Good,Pass
+Medium,Long,Good,Yes,Weak,Good,Pass
+Low,Short,Average,No,Weak,Poor,Fail
+High,Short,Average,Yes,Strong,Good,Pass
+Medium,Short,Poor,No,Weak,Poor,Fail
+High,Long,Good,Yes,Strong,Good,Pass
+Low,Long,Poor,No,Weak,Poor,Fail
+Medium,Long,Average,Yes,Strong,Good,Pass
+Low,Short,Poor,No,Weak,Poor,Fail

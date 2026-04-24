@@ -1,0 +1,41 @@
+:- dynamic item/2.
+
+item(veg_pizza, 120).
+item(paneer_pizza, 150).
+item(chicken_pizza, 200).
+
+set_price :-
+    write('--- Set Menu Prices ---'), nl,
+    forall(item(Name, OldPrice), (
+        format('Enter price for ~w: ', [Name]),
+        read(NewPrice),
+        retract(item(Name, OldPrice)),
+        assertz(item(Name, NewPrice))
+    )),
+    nl, write('Prices updated successfully!'), nl,
+    show_menu.
+
+add_item(Name, Price) :-
+    assertz(item(Name, Price)).
+
+show_menu :-
+    nl, write('--- CURRENT MENU ---'), nl,
+    forall(item(Name, Price),
+          (write(Name), write(' - Rs '), write(Price), nl)).
+
+order_list([], 0).
+
+order_list([(Item, Qty)|T], Total) :-
+    item(Item, Price),
+    Sub is Price * Qty,
+    write('Item: '), write(Item), nl,
+    write('Quantity: '), write(Qty), nl,
+    write('Subtotal: Rs '), write(Sub), nl, nl,
+    order_list(T, Rest),
+    Total is Sub + Rest.
+
+bill(OrderList) :-
+    order_list(OrderList, Total),
+    write('----------------------'), nl,
+    write('Total Bill: Rs '), write(Total), nl.
+

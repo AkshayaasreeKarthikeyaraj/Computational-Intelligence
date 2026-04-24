@@ -1,0 +1,59 @@
+71 ?- show_menu.
+
+--- CURRENT MENU ---
+veg_pizza - Rs 120
+paneer_pizza - Rs 150
+chicken_pizza - Rs 200
+true.
+
+72 ?- set_price.
+--- Set Menu Prices ---
+Enter price for veg_pizza: 140.
+Enter price for paneer_pizza: |: 170.
+Enter price for chicken_pizza: |: 230.
+
+Prices updated successfully!
+
+--- CURRENT MENU ---
+veg_pizza - Rs 140
+paneer_pizza - Rs 170
+chicken_pizza - Rs 230
+true.
+
+73 ?- bill([(veg_pizza,1),(paneer_pizza,2)]).
+Item: veg_pizza
+Quantity: 1
+Subtotal: Rs 140
+
+Item: paneer_pizza
+Quantity: 2
+Subtotal: Rs 340
+
+----------------------
+Total Bill: Rs 480
+true.
+
+74 ?- add_item(mushroom_pizza,190).
+true.
+
+75 ?- show_menu.
+
+--- CURRENT MENU ---
+veg_pizza - Rs 140
+paneer_pizza - Rs 170
+chicken_pizza - Rs 230
+mushroom_pizza - Rs 190
+true.
+
+76 ?- bill([(mushroom_pizza,2),(chicken_pizza,2)]).
+Item: mushroom_pizza
+Quantity: 2
+Subtotal: Rs 380
+
+Item: chicken_pizza
+Quantity: 2
+Subtotal: Rs 460
+
+----------------------
+Total Bill: Rs 840
+true.
