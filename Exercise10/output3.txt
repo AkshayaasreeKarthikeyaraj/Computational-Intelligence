@@ -1,0 +1,25 @@
+Enter first number: 5
+Enter operator (+, -, *, /, mod, ^): +
+Enter second number: 3
+Result: 8
+
+Enter first number: 10
+Enter operator (+, -, *, /, mod, ^): -
+Enter second number: 15
+Result: -5
+
+Enter first number: 5
+Enter operator (+, -, *, /, mod, ^): *
+Enter second number: 4
+Result: 20
+
+Enter first number: 25
+Enter operator (+, -, *, /, mod, ^): /
+Enter second number: 5
+Result: 5
+
+Enter first number: 10
+Enter operator (+, -, *, /, mod, ^): mod
+Enter second number: 3
+Result: 1
+

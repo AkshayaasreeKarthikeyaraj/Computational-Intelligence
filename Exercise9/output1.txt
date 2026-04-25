@@ -1,0 +1,14 @@
+Enter the number of tosses: 2
+Sample Space (4 outcomes): ['HH', 'HT', 'TH', 'TT']
+
+Exactly 1 Head : ['HT', 'TH']
+Probability: 0.5
+
+At least 2 Tail: ['TT']
+Probability: 0.25
+
+At least 1 Tail: ['HT', 'TH', 'TT']
+Probability: 0.75
+
+At most 1 Tail: ['HH', 'HT', 'TH']
+Probability: 0.75

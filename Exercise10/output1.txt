@@ -1,0 +1,11 @@
+Enter a string: madam
+Original: madam
+Length: 5
+Reversed: madam
+Result: It is a palindrome
+
+Enter a string: computer
+Original: computer
+Length: 8
+Reversed: retupmoc
+Result: It is NOT a palindrome

@@ -1,0 +1,8 @@
+Enter eventA : Rain
+ENter eventB : Cloudy
+P(Rain) = 0.2
+P(Cloudy) = 0.5
+P(Cloudy|Rain) = 0.9
+
+Using Bayes Rule :
+P(Rain|Cloudy) = 0.36

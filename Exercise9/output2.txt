@@ -1,0 +1,58 @@
+Enter number of variables: 3
+Enter variable names:
+Traffic
+Sunny
+Late
+
+Enter values for each combination:
+traffic=T, sunny=T, late=T
+Value: 0.10
+traffic=T, sunny=T, late=F
+Value: 0.15
+traffic=T, sunny=F, late=T
+Value: 0.20
+traffic=T, sunny=F, late=F
+Value: 0.10
+traffic=F, sunny=T, late=T
+Value: 0.05
+traffic=F, sunny=T, late=F
+Value: 0.20
+traffic=F, sunny=F, late=T
+Value: 0.08
+traffic=F, sunny=F, late=F
+Value: 0.12
+
+Knowledge Base Table:
+TRAFFIC | SUNNY | LATE | Value
+------------------------------
+T | T | T | 0.1
+T | T | F | 0.15
+T | F | T | 0.2
+T | F | F | 0.1
+F | T | T | 0.05
+F | T | F | 0.2
+F | F | T | 0.08
+F | F | F | 0.12
+
+Enter query or '0' to exit: P(~Sunny^Traffic)
+Result = 0.3
+
+Enter query or '0' to exit: P(Late)
+Result = 0.43
+
+Enter query or '0' to exit: P(Late|~Sunny)
+Result = 0.56
+
+Enter query or '0' to exit: P(~Sunny v Late)
+Result = 0.65
+
+Enter query or '0' to exit: P(Sunny^Traffic^Late)
+Result = 0.1
+
+Enter query or '0' to exit: P(Late|Sunny^~Traffic)
+Result = 0.2
+
+Enter query or '0' to exit: P(Traffic|Sunny)
+Result = 0.5
+
+Enter query or '0' to exit: 0

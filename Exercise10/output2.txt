@@ -1,0 +1,6 @@
+Enter the side length of the square:
+13
+--- Results ---
+Side: 13
+Area: 169
+Perimeter: 52
